@@ -1,0 +1,211 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    background-image: url(assets/geometry2.png);
+}
+
+.app_header{
+    width: 100%;
+    height: 300px;
+    background-image: url(assets/oli-dale-139169.jpg);
+    background-size: auto 1500px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.app_header h2{
+    font-size: 65px;
+    margin: 0;
+    padding-top: 70px;
+    color: white;
+}
+
+.app_header .input_container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.app_header .task_input{
+    margin-top: 25px;
+    width: 700px;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif; 
+    border: none;
+    color: #808080;   
+    border-radius: 2px;
+}
+
+.app_header input:focus{
+    outline-color: #FFBE8A;
+    outline-width: 2px;    
+}
+
+.app_header input::placeholder{
+    color: gray;
+    font-size: 90%;    
+}
+
+.app_header input:focus::placeholder{
+    color: #ffd695;
+}
+
+.app_header .category-input{
+    margin-top: 10px;
+    height: 35px;
+    width: 250px;
+    font-size: 13px;
+    color: gray;
+}
+
+.app_header .check_style{
+    display: block;
+    float: right;
+    margin-top: 20px;
+    color: #c4bfbc;
+}
+
+.app_header .check_style:hover{
+    cursor: pointer;
+    color: #ffd695;
+}
+
+
+
+/* Category Container Section */
+.category_input_container{
+    
+}
+
+.category-input{
+    float: left;
+    margin-left: 250px;
+    transition: margin-left .3s;
+}
+
+#custom-category{
+    width: 250px;
+    float: left;
+    height: 29px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.hide-custom-category{    
+    display: none;
+}
+.show-custom-category{
+    display: block;
+}
+
+.category-container{
+    width: 500px;
+    height: 2000px;
+    float: left;
+    margin-top: 10px;
+}
+
+.category-title{
+    margin-left: 45px;
+    font-size: 23px;
+    color: #686868;
+}
+
+.category-item{
+    margin-left: 50px;
+    font-size: 20px;
+    color: #ffd695;
+    cursor: pointer;
+    width: 250px;
+}
+
+.category-item:hover{
+    margin-left: 60px;
+    transition: margin .3s;
+    color: #AA6801;    
+}
+
+
+/* Task Container Section */
+.task_container{
+    width: 900px;
+    height: 2000px;
+    margin: 10px auto 0 auto;
+}
+
+.task{    
+    width: 550px;
+    height: 40px;
+    margin: 10px auto 0 auto;
+    border-top: 1px solid #ffd695;
+    border-bottom: 1px solid #ffd695;
+    transition: border 3s;    
+}
+
+.task img{
+    float: left;
+    width: 25px;
+    height: 30px;
+    margin-top: 3px;
+    display: none;
+}
+
+.strikeThrough{
+    text-decoration: line-through;
+}
+
+.task:hover img{
+    display: block;
+}
+
+.task:hover p{
+    transform: translateX(10px);
+}
+
+.task .complete-task{
+    width: 20px;
+    height: 20px;
+    font-family: sans-serif;
+    transform: rotateZ(320deg);
+}
+
+.task p{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 450px;
+    float: left;
+    font-size: 20px;
+    color: gray;
+    transition: transform .3s;
+}
+
+.highlight{
+    box-shadow: 5px 5px 5px #ffd695;
+}
+
+.task button{
+    background: none;
+    height: 20px;
+    width: 25px;
+    margin-top: 10px;
+    border: none;
+    vertical-align: middle;    
+    float: right;
+}
+
+.task .add_style{
+    color: #ffd695;
+    
+}
+
+.task .add_style:hover{
+    cursor: pointer;
+    color: #724827;
+}
+
+
+
+
+
